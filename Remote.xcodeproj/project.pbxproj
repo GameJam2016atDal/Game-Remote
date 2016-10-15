@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3197889ACDFCC5BB043540F /* Pods_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B61F8437386B2EC0D49B77F /* Pods_Remote.framework */; };
 		E31C8CCE1DB2892800F37B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C8CCD1DB2892800F37B82 /* AppDelegate.swift */; };
-		E31C8CD01DB2892800F37B82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C8CCF1DB2892800F37B82 /* ViewController.swift */; };
 		E31C8CD31DB2892800F37B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31C8CD11DB2892800F37B82 /* Main.storyboard */; };
 		E31C8CD51DB2892800F37B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31C8CD41DB2892800F37B82 /* Assets.xcassets */; };
 		E31C8CD81DB2892800F37B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31C8CD61DB2892800F37B82 /* LaunchScreen.storyboard */; };
+		E31C8CE01DB28F5D00F37B82 /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C8CDF1DB28F5C00F37B82 /* AnalogJoystick.swift */; };
+		E31C8CE51DB2995000F37B82 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C8CE31DB2995000F37B82 /* GameScene.swift */; };
+		E31C8CE61DB2995000F37B82 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C8CE41DB2995000F37B82 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B61F8437386B2EC0D49B77F /* Pods_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2673F596DB4EBDE0C09C8B71 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		A8FF7EA1AA2518AE73A21432 /* Pods-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.release.xcconfig"; sourceTree = "<group>"; };
 		E31C8CCA1DB2892800F37B82 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31C8CCD1DB2892800F37B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E31C8CCF1DB2892800F37B82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E31C8CD21DB2892800F37B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E31C8CD41DB2892800F37B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E31C8CD71DB2892800F37B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E31C8CD91DB2892800F37B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E31C8CDF1DB28F5C00F37B82 /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
+		E31C8CE31DB2995000F37B82 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E31C8CE41DB2995000F37B82 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3197889ACDFCC5BB043540F /* Pods_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E9DFB8210DE705C2FE9A4F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2673F596DB4EBDE0C09C8B71 /* Pods-Remote.debug.xcconfig */,
+				A8FF7EA1AA2518AE73A21432 /* Pods-Remote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB4AEA07728F03C4C2C4B9E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B61F8437386B2EC0D49B77F /* Pods_Remote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E31C8CC11DB2892800F37B82 = {
 			isa = PBXGroup;
 			children = (
 				E31C8CCC1DB2892800F37B82 /* Remote */,
 				E31C8CCB1DB2892800F37B82 /* Products */,
+				4E9DFB8210DE705C2FE9A4F6 /* Pods */,
+				AB4AEA07728F03C4C2C4B9E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				E31C8CCD1DB2892800F37B82 /* AppDelegate.swift */,
-				E31C8CCF1DB2892800F37B82 /* ViewController.swift */,
+				E31C8CE31DB2995000F37B82 /* GameScene.swift */,
+				E31C8CE41DB2995000F37B82 /* GameViewController.swift */,
+				E31C8CDF1DB28F5C00F37B82 /* AnalogJoystick.swift */,
 				E31C8CD11DB2892800F37B82 /* Main.storyboard */,
 				E31C8CD41DB2892800F37B82 /* Assets.xcassets */,
 				E31C8CD61DB2892800F37B82 /* LaunchScreen.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E31C8CDC1DB2892800F37B82 /* Build configuration list for PBXNativeTarget "Remote" */;
 			buildPhases = (
+				2C92974F0480FD4DBE183E2E /* [CP] Check Pods Manifest.lock */,
 				E31C8CC61DB2892800F37B82 /* Sources */,
 				E31C8CC71DB2892800F37B82 /* Frameworks */,
 				E31C8CC81DB2892800F37B82 /* Resources */,
+				050E9FE973E7B8D5FED589DD /* [CP] Embed Pods Frameworks */,
+				1E7803053023F69E64E21B04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					E31C8CC91DB2892800F37B82 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z725SJ238D;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +165,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		050E9FE973E7B8D5FED589DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote/Pods-Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E7803053023F69E64E21B04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote/Pods-Remote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C92974F0480FD4DBE183E2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E31C8CC61DB2892800F37B82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E31C8CD01DB2892800F37B82 /* ViewController.swift in Sources */,
+				E31C8CE61DB2995000F37B82 /* GameViewController.swift in Sources */,
+				E31C8CE01DB28F5D00F37B82 /* AnalogJoystick.swift in Sources */,
+				E31C8CE51DB2995000F37B82 /* GameScene.swift in Sources */,
 				E31C8CCE1DB2892800F37B82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +268,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: feng guo (2TL4W289L7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: feng guo (2TL4W289L7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -234,7 +319,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: feng guo (2TL4W289L7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: feng guo (2TL4W289L7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -258,8 +344,11 @@
 		};
 		E31C8CDD1DB2892800F37B82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2673F596DB4EBDE0C09C8B71 /* Pods-Remote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z725SJ238D;
 				INFOPLIST_FILE = Remote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycheng.Remote;
@@ -270,8 +359,11 @@
 		};
 		E31C8CDE1DB2892800F37B82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FF7EA1AA2518AE73A21432 /* Pods-Remote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z725SJ238D;
 				INFOPLIST_FILE = Remote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycheng.Remote;
@@ -299,6 +391,7 @@
 				E31C8CDE1DB2892800F37B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
